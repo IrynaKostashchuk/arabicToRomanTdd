@@ -38,6 +38,11 @@ import static org.junit.Assert.*;
     }
 
     @Test
+    public void whenNumberIs5ThenV() {
+        assertEquals("V", Converter.convertArabicToRoman(5));
+    }
+
+    @Test
     public void whenNumberIs6ThenVI() {
         assertEquals("VI", Converter.convertArabicToRoman(6));
     }
@@ -46,6 +51,10 @@ import static org.junit.Assert.*;
         assertEquals("IX", Converter.convertArabicToRoman(9));
     }
 
+    @Test
+    public void whenNumberIs10ThenX() {
+        assertEquals("X", Converter.convertArabicToRoman(10));
+    }
     @Test
     public void whenNumberIs11ThenXI() {
         assertEquals("XI", Converter.convertArabicToRoman(11));
@@ -56,6 +65,10 @@ import static org.junit.Assert.*;
         assertEquals("XIV", Converter.convertArabicToRoman(14));
     }
 
+    @Test
+    public void whenNumberIs15ThenXV() {
+        assertEquals("XV", Converter.convertArabicToRoman(15));
+    }
     @Test
     public void whenNumberIs19ThenXIX() {
         assertEquals("XIX", Converter.convertArabicToRoman(19));
